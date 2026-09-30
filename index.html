@@ -2,10 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serkan Senay - Portfolio</title>
+    <style>
+        /* Tasarım (CSS) Kodları */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #1abc9c;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            border-bottom: 3px solid #1abc9c;
+            padding-bottom: 10px;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .project-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            flex: 1;
+            min-width: 250px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-links {
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, I am Serkan Senay!</h1>
-    <p>I am a computer programmer. This is my first website.</p>
+
+    <!-- Üst Başlık Bölümü -->
+    <header>
+        <h1>Serkan Senay</h1>
+        <p>Computer Programmer</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Hakkımda Bölümü -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate computer programmer dedicated to writing clean, efficient, and logical code. I enjoy building software solutions, learning new technologies, and continuously improving my skills.</p>
+        </section>
+
+        <!-- Yetenekler Bölümü -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> C, C++, Python, HTML, CSS (Update these based on your knowledge)</p>
+            <p><strong>Tools & Technologies:</strong> Git, GitHub, Visual Studio Code</p>
+        </section>
+
+        <!-- Projeler Bölümü -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of what this project does and the languages used to build it.</p>
+                    <a href="https://github.com/serkansenay" target="_blank">View on GitHub &rarr;</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>A brief description of your second project. You can add more cards like this later.</p>
+                    <a href="https://github.com/serkansenay" target="_blank">View on GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim Bölümü -->
+        <section id="contact">
+            <h2>Contact & Links</h2>
+            <p class="contact-links">
+                <a href="https://github.com/serkansenay" target="_blank">GitHub</a> &nbsp; | &nbsp; 
+                <a href="https://www.linkedin.com/in/serkansenay" target="_blank">LinkedIn</a> &nbsp; | &nbsp; 
+                <a href="mailto:serkansenay65@gmail.com">serkansenay65@gmail.com</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 Serkan Senay. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
