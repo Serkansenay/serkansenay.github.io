@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serkan Senay - Portfolio</title>
     <style>
-        /* Tasarım (CSS) Kodları */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -55,7 +54,7 @@
         }
         .project-card {
             flex: 1;
-            min-width: 250px;
+            min-width: 350px;
             background: #f8f9fa;
             border: 1px solid #e9ecef;
             padding: 20px;
@@ -69,6 +68,15 @@
         .project-card h3 {
             margin-top: 0;
             color: #2c3e50;
+        }
+        .tech-tag {
+            display: inline-block;
+            background-color: #e0e0e0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
         a {
             color: #1abc9c;
@@ -91,7 +99,6 @@
 </head>
 <body>
 
-    <!-- Üst Başlık Bölümü -->
     <header>
         <h1>Serkan Senay</h1>
         <p>Computer Programmer</p>
@@ -99,37 +106,52 @@
 
     <div class="container">
         
-        <!-- Hakkımda Bölümü -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hello! I am a passionate computer programmer dedicated to writing clean, efficient, and logical code. I enjoy building software solutions, learning new technologies, and continuously improving my skills.</p>
         </section>
 
-        <!-- Yetenekler Bölümü -->
         <section id="skills">
             <h2>Technical Skills</h2>
-            <p><strong>Languages:</strong> C, C++, Python, HTML, CSS (Update these based on your knowledge)</p>
+            <p><strong>Languages:</strong> C#, Python, PHP, HTML, CSS</p>
             <p><strong>Tools & Technologies:</strong> Git, GitHub, Visual Studio Code</p>
         </section>
 
-        <!-- Projeler Bölümü -->
         <section id="projects">
             <h2>My Projects</h2>
             <div class="project-grid">
+                
                 <div class="project-card">
-                    <h3>Project Name 1</h3>
-                    <p>A brief description of what this project does and the languages used to build it.</p>
-                    <a href="https://github.com/serkansenay" target="_blank">View on GitHub &rarr;</a>
+                    <h3>C-ile-adam-asmaca</h3>
+                    <span class="tech-tag">C#</span>
+                    <p>A classic console-based Hangman game.</p>
+                    <a href="https://github.com/serkansenay/C-ile-adam-asmaca" target="_blank">View on GitHub &rarr;</a>
                 </div>
+
                 <div class="project-card">
-                    <h3>Project Name 2</h3>
-                    <p>A brief description of your second project. You can add more cards like this later.</p>
-                    <a href="https://github.com/serkansenay" target="_blank">View on GitHub &rarr;</a>
+                    <h3>CSharp-Console-Task-Manager</h3>
+                    <span class="tech-tag">C#</span>
+                    <p>A console-based task manager application.</p>
+                    <a href="https://github.com/serkansenay/CSharp-Console-Task-Manager" target="_blank">View on GitHub &rarr;</a>
                 </div>
+
+                <div class="project-card">
+                    <h3>PHP-Simple-JSON-API</h3>
+                    <span class="tech-tag">PHP</span>
+                    <p>A simple JSON API implementation.</p>
+                    <a href="https://github.com/serkansenay/PHP-Simple-JSON-API" target="_blank">View on GitHub &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Python-Password-Generator</h3>
+                    <span class="tech-tag">Python</span>
+                    <p>A password generator tool.</p>
+                    <a href="https://github.com/serkansenay/Python-Password-Generator" target="_blank">View on GitHub &rarr;</a>
+                </div>
+
             </div>
         </section>
 
-        <!-- İletişim Bölümü -->
         <section id="contact">
             <h2>Contact & Links</h2>
             <p class="contact-links">
@@ -140,7 +162,6 @@
         </section>
     </div>
 
-    <!-- Alt Bilgi -->
     <footer>
         <p>&copy; 2026 Serkan Senay. All rights reserved.</p>
     </footer>
